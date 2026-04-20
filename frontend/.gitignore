@@ -1,3 +1,5 @@
+# Add .env protection to frontend .gitignore
+@"
 # Node dependencies
 node_modules/
 
@@ -11,3 +13,13 @@ yarn-error.log*
 # OS files
 .DS_Store
 
+# Environment variables (ADD THIS SECTION)
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+"@ | Out-File -FilePath frontend/.gitignore -Encoding utf8
+
+# Add the updated .gitignore
+git add frontend/.gitignore
