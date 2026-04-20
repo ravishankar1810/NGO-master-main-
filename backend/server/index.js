@@ -79,7 +79,7 @@ app.get('/api/health', (req, res) => {
 });
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/servex' || 'mongodb+srv://ravishanka1819_db_user:YsDnQdSa8L2KNOTW@cluster0.mbg65b1.mongodb.net/?appName=Cluster1')
+mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/servex')
   .then(() => console.log('✅ Connected to MongoDB Atlas'))
   .catch((err) => console.error('❌ MongoDB connection error:', err));
 
