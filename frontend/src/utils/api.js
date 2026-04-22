@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+// 👇 We changed the fallback string right here to point to your live backend!
+const API_URL = import.meta.env.VITE_API_URL || 'https://ngo-master-main.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_URL,
